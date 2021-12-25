@@ -1,0 +1,22 @@
+* {margin: 0; padding: 0;}
+
+* body {
+  font-size: 16px;
+  font-family: 맑은 고딕 Malgun Gothic, Verdana, Dotum, Arial, sans-serif;
+  color: #444;
+}
+
+p {margin: 5px 0 10px 0;}
+
+.title {
+  position: absolute;
+  top: 200px;
+  font-size: 32px; font-weight: bold;
+}
+
+.tool-guide {
+  position: fixed;
+  top: 25%;
+  left: 35%;
+  font-size: 28px; color: black;
+}
