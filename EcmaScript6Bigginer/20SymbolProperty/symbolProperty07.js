@@ -144,13 +144,14 @@ const {log} = window.console;
     debugger;
     obj.maxCount = 2;
     const iteratorObj = obj[Symbol.iterator]();
+    iteratorObj.maxCount = 1;
     debugger;
 
     log(iteratorObj.next());
     // :: {value: 0, done: false}
     debugger;
     log(iteratorObj.next());
-    // :: {value: 1, done: false}
+    // :: {value: undefined, done: true}
     debugger;
 
     /**
