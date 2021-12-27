@@ -57,6 +57,7 @@ const {log} = window.console;
     log('------------ Symbol.match() ---------------');
     const sports = {
         base : "ball",
+        // 파라미터 값은 "al"
         [Symbol.match](value){
             debugger;
             return this.base.indexOf(value) < 0 ? "없음" : "있음";
@@ -64,8 +65,17 @@ const {log} = window.console;
     }
 
     const al = "al";
+    // al.__proto__.match = function(){
+    //     debugger;
+    // }
+
     /**
-     *  파라미터 값에서 match 가 존재하는지 체크하네
+     *  - 파라미터 값에서 match 가 존재하는지 체크하네...
+     *    없으면 String.prototype.match()를 호출하는 구나.
+     *
+     *  - 아니, 이매치는 al.__proto__.match 이게 맞는데...
+     *  --> 아 팩트는 match를 호출하면 내부프로퍼티인 new RegExp를 이용하여 sports를
+     *      처리하기 때문에 그 그처리를 할때 sports안의 match를 사용하네...
      */
     log(al.match(sports));
     // :: 있음
@@ -88,6 +98,12 @@ const {log} = window.console;
 {
     "use strict"
     log('------------ 문자열로 인식 ---------------');
+    // String.prototype.startsWith = function(search, pos) {
+    //     debugger;
+    //     // !pos || => 즉, pos 에 값이 있으면
+    //     return this.substr(!pos || pos < 0 ? 0 : +pos, search.length );
+    // }
+
     try {
         // /book/ 패턴.
         "/book/".startsWith(/book/);
@@ -101,7 +117,8 @@ const {log} = window.console;
     let check = /book/;
     /**
      * - check를 정규 표현식으로 인식하지 않도록 처리
-     * --> 즉, [Symbol.match]의 기능을 사용하지 않겠다는 것.
+     *
+     * --> 애는 정규표현식이 아닌데...? 흠트레스팅... 일단 오케이...
      */
     check[Symbol.match] = false;
     log("/book/".startsWith(check));

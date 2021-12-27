@@ -121,7 +121,8 @@ const {log} = window.console;
     debugger;
 
     /**
-     * 머야 미친, 새로운 인스턴스가 아니라 연결이네...?
+     * - 머야 미친, 새로운 인스턴스가 아니라 연결이네...?
+     *   이터레이터 안에서 yield 처리를 하나보네.
      */
     const obj = genObj[Symbol.iterator]();
     log(obj.next());
