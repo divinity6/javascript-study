@@ -110,6 +110,8 @@ const {log} = window.console;
      *
      *  --> Symbol 값을 공유할 것이냐, 아니면 별도의 Symbol 값을
      *      만들어서 사용할 것이냐
+     *
+     *  ===== 있던 값을 호출하면 가지고 온다는 것을 기억 =====
      */
 }
 
@@ -143,6 +145,7 @@ const {log} = window.console;
     // :: book
     log(sports);
     // :: sports
+
     debugger;
 
     // 1. const six = Symbol.keyFor(one);
