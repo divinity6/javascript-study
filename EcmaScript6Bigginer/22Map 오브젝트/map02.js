@@ -57,6 +57,9 @@ const {log} = window.console;
      *  -  size 가 length 기능을 한다
      *  --> size 는 Entries 의 수를 나타낸다.
      *
+     *  ----> 즉, Map 인스턴스는 Array 인스턴스와 구조가 같다.
+     *        단, value 가 다른것 뿐!!
+     *
      *  5. 인덱스를 부여하여 저장하므로 작성한 순서대로 읽혀진다.(보장)
      *
      *  - [[Entries]] 는 index : value 형태인데
