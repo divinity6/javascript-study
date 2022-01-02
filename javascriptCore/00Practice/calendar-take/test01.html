@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset = "UTF-8" />
+        <title>캘린더 만들어보리기</title>
+        
+        <link href = "reset.css" rel="stylesheet" />
+        <link href = "calendar01.css" rel="stylesheet" />
+        <script src ="test01.js" defer></script>
+</head>
+<body>
+    <!-- 클론으로 만들어보고 그다음 제작하자 -->
+    <!-- <div class="cal-context">
+        <div class="ui-container">
+
+        </div>
+        <div class="cal-container"></div>
+    </div> -->
+    <div class="container">
+        <div class="my-calendar clearfix">
+            <div class="clicked-date">
+                <div class="cal-day">SaturDay</div>
+                <div class="cal-date">13</div>
+            </div>
+            <div class="calendar-box">
+                <div class="ctr-box clearfix">
+                    <button type="button" title="prev" class="btn-cal prev"></button>
+                    <span class="cal-month"></span>
+                    <span class="cal-year"></span>
+                    <button type="button" title="prev" title="next" class="btn-cal next"></button>
+                </div>
+                <table class="cal-table">
+                    <thead>
+                        <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cal-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

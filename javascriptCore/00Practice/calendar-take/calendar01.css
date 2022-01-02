@@ -1,0 +1,126 @@
+@charset "urf-8";
+
+html,body {
+    box-sizing: border-box;
+    font-size: 10px;
+    /* pointer-events: none; */
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+
+/* ===== Calendar ===== */
+.my-calendar {
+    width: 70rem;
+    margin: 3rem;
+    padding: 2rem 2rem 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+.my-calendar .clicked-date {
+    border-radius: 2.5rem;
+    margin-top: 3.6rem;
+    float: left;
+    width: 42%;
+    padding: 4.6rem 0 2.6rem;
+    background-color: #ddd;
+}
+
+.my-calendar .calendar-box {
+    float: right;
+    width: 58%;
+    padding-left: 3rem;
+}
+
+.clicked-date .cal-day {
+    font-size: 2.4rem;
+}
+
+.clicked-date .cal-date {
+    font-size: 13rem;
+}
+
+.ctr-box {
+    padding: 0 1.6rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.ctr-box .btn-cal {
+    position: relative;
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    background-color: none;
+}
+.ctr-box .btn-cal.prev {
+    float: left;
+}
+
+.ctr-box .btn-cal.prev::after {
+    content:'<';
+}
+
+.ctr-box .btn-cal.next {
+    float: right;
+}
+
+.ctr-box .btn-cal.next::after {
+    content:'>';
+}
+
+.cal-table {
+    width: 100%;
+}
+
+.cal-table th {
+    width: 14.2857%;
+    padding-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.cal-table td {
+    padding: 3px 0;
+    height: 5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.cal-table td.day {
+    position: relative;
+    cursor: pointer;
+}
+
+.cal-table td.today {
+    background-color: #fff;
+}
+.cal-table td.today-active {
+    background-color: #ff8585;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.cal-table td.has-event::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #FFC107;
+}

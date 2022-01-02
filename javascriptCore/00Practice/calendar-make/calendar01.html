@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset = "UTF-8" />
+        <title>Remarkable-Calendar</title>
+        
+        <link href = "reset.css" rel="stylesheet" />
+        <link href = "calendar01.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <!-- 클론으로 만들어보고 그다음 제작하자 -->
+    <div class="rc-calendar container" style="margin-left:auto; width: 400px; height: 100vh; background-color: #ebebeb;">
+        <div class="rc-container">
+            <div class="rc-area rc-ui">
+                <div class="ui-dates">
+                    <div class="item ui-year"></div>
+                    <div class="item ui-month"></div>
+                    <div class="item ui-date"></div>
+                </div>
+                <div class="ui-interaction">
+                    <div class="ui-today">
+                        <button class="ui-btn today bg-primary">오늘</button>
+                    </div>
+                    <div class="ui-arrow">
+                        <div class="item-btn prev">
+                            <button class="ui-btn primary-hover">
+                                <i class="material-icons">keyboard_arrow_up</i>
+                            </button>
+                        </div>
+                        <div class="item-btn next">
+                            <button class="ui-btn primary-hover">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rc-area rc-cal">
+                <div class="rc-table">
+                    <div class="rc-head">
+                        <table>
+                            <colgoup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgoup>
+                            <thead>
+                                <tr>
+                                    <th class="secondary">일</th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th class="secondary">토</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="rc-body primary-td">
+                        <!-- <table>
+                            <tbody>
+                                <tr>
+                                    <td><span>01</span><div class="checked-active"></div></td>
+                                    <td><span>01</span></td>
+                                    <td class="today-active">
+                                        <span>01</span>
+                                    </td>
+                                    <td><span>01</span></td>
+                                    <td class="click-active">
+                                        <div class="checked-active"></div>
+                                        <span>01</span>
+                                    </td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td>
+                                        <span>01</span>
+                                    </td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td>
+                                        <span>01</span>
+                                    </td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td class="today-active">
+                                        <div class="checked-active"></div>
+                                        <span>01</span>
+                                    </td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td class="today-active">
+                                        <span>01</span>
+                                    </td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>01</span></td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+
+    <script src ="calendar00.js" defer></script>
+</body>
+</html>

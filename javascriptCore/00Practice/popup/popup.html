@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset = "UTF-8" />
+        <title>Popup</title>
+        
+        <link href = "reset.css" rel="stylesheet" />
+        <link href = "popup.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <script src ="popup.js" defer></script>
+</head>
+<body>
+    <div class="blank-mdpop"></div>
+    <div class="pop-modify">
+        <div class="mdpop-header primary-bg">
+            <div class="tit-area">
+                <div class="tit"><strong>ID 일원화</strong> 알림</div>
+                <button type="button" class="closed01 material-icons">close</button>
+            </div>
+        </div>
+        <div class="mdpop-body">
+            <div class="txt-area main">
+                <p class="txt">보결전담강사 예약 업무의 접근 편의성을 개선하고자 <br />
+                        <strong class="primary">거점기관(중심학교)과 수요기관의 ID를 일원화</strong> 하였음을 
+                    알려드립니다.
+                </p>
+                <p class="txt info">
+                    <span class="flex-item">
+                        <i class="material-icons">info</i>
+                        <span><strong>일원화 내역 : </strong>거점기관(중심학교) ID는  수요기관 ID로 통합</span>
+                    </span>
+                    <span class="tc bold">(base*** ➔ vpuser*** 로 로그인 가능)</span>
+                </p>
+            </div>
+            <div class="txt-area warning">
+                <i class="material-icons">error_outline</i>
+                <p>
+                    이후, 거점기관(중심학교) ID(base***)로는 로그인이 불가합니다. <br />
+                    불편을 끼쳐드려 죄송합니다. 많은 양해 부탁드립니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="mdpop-foot">
+            <div class="btn-area">
+                <button type="button" class="btn primary-bg closed02"><span>오늘 하루 보지않기</span></button>
+                <button type="button" class="btn btn-close primary-bg closed03">
+                    <span>닫기</span>
+                    <i class="material-icons">close</i>
+                    </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
