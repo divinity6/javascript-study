@@ -11,6 +11,7 @@
  *     --> number 등의 프리미티브 타입 사용 불가
  *     ----> 반면 Map 은 프리미티브 타입 사용 가능
  *     --> value 는 제한 없음
+ *         ( WeakMap !== PrimitiveValue )
  *
  *     - Map 에서 key 로 참조한 object 를 삭제하면
  *     --> 삭제한 object 를 사용할 수 없게 되지만
