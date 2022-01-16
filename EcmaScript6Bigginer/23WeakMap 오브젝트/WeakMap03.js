@@ -102,6 +102,7 @@ const {log} = window.console;
      */
     // WeakMap 오브젝트의 상태
     // - 와 진짜 GC 가 안쓰는건 지워버리네 ㅋㅋㅋ
+    // 4초 기둘려야함
     setTimeout(function(){
         debugger;
         log(obj.get(sports));
