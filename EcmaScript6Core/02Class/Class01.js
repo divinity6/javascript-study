@@ -75,7 +75,7 @@ const { log } = window.console;
 
         /**
          *  class 안에 작성된것은 메소드다.
-         *  - 이것을 알아서 엔진이 연결해 준다.
+         *  - 이것을 알아서 엔진이 prototype 에 연결해 준다.
          */
         getPoint(){
             return this.point;
