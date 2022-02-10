@@ -29,7 +29,7 @@ const { log } = window.console;
 
     /**
      *  - class 는 생성자 함수라고 부를 수 없고
-     *    클래스 이름이라고 한다
+     *    클래스 이름이라고 불러야 한다
      *    ( 개념적으로 조금 차이가 있다 )
      */
     class Point {
@@ -227,5 +227,6 @@ const { log } = window.console;
      */
     list.push('책');
     log(list);
+    // :: ['책']
     // 1. push() 메소드는 Array.prototype 에 연결되어 있다.
 }
