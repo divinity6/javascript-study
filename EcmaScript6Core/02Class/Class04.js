@@ -87,6 +87,7 @@ const { log } = window.console;
     //    Point 클래스 오브젝트를 생성할때
     //    constructor 에서 클래스 전체를
     //    참조하도록 환경을 만든다
+    //  --> 호출할때가아니라 엔진 컨트롤이 class 오브젝트를 만날때!!
 
     // 2. constructor 를 작성하지 않으면
     //    prototype.constructor 를 사용하므로
@@ -126,6 +127,8 @@ const { log } = window.console;
     // :: 100
     log(obj instanceof Point);
     // :: true
+    log(obj.book);
+    // :: undefined
     debugger;
 
     // 1. return point;
