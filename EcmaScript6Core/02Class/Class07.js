@@ -31,6 +31,10 @@ const { log } = window.console;
     class Point extends Book {
         getTitle() {
             // super class 의 getTitle() 호출
+            /**
+             *  함수가 아닌 일반 super 는 __proto__ 에
+             *  있는 것을 호출하넹!!
+             */
             super.getTitle();
             log("서브");
         }
