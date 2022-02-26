@@ -90,7 +90,7 @@ const { log } = window.console;
      *  -  그런데도 앞에서 new 연산자로 인스턴스를 생성했다
      *  --> 이것은 말이 안되는 것아닌가...?
      *
-     *  -  또한, proxy(target, {}) 형태로 실행하면 에러가 난다고 했다
+     *  -  또한, Proxy(target, {}) 형태로 실행하면 에러가 난다고 했다
      *  --> 즉, new 연산자를 사용해야 한다고 했는데,
      *      constructor 가 없다라는 것.
      */
@@ -279,7 +279,7 @@ const { log } = window.console;
      *  -  [[Target]] 의 point 프로퍼티 값을 구할 때
      *  -  obj.proxy.point 형태로 작성해야 한다
      *
-     *  4. [[IsRevoked]] 가 있으며 값은 false 이다
+     *  4. [[IsRevoked]] 가 있으며 이때, 값은 false 이다
      */
     debugger;
     obj.revoke();

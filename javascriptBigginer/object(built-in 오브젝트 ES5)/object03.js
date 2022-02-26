@@ -188,7 +188,7 @@
       - enumerable: false
       ----> 프로퍼티 열거 불가
   */
-  log( 'for~in으로 열거 가능' , 'note' );
+  log( 'for~in 으로 열거 가능' , 'note' );
 
   var obj = [];
   
@@ -202,7 +202,7 @@
     console.log(name + ":" + obj[name]);
   };
 
-  log( 'for~in으로 열거 불가' , 'note' );
+  log( 'for~in 으로 열거 불가' , 'note' );
 
   var obj = [];
   
