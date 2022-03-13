@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Module 스코프 , export 값 유지, this 참조
+    </title>
+    <!-- type 에 module 을 명시해줘야 module 방식으로 import export 가능 -->
+    <!-- 설명을 위해 export 파일 작성!
+         - 원래 export 파일은 작성 안함! -->
+    <script type="module" src="./export/access_export.mjs"></script>
+    <!-- 이것은 일반적인 js 파일 -->
+    <script src="./export/access_js.js" defer></script>
+    <!-- import 값 유지 확인 -->
+    <script type="module" src="import/keep_import.mjs" defer></script>
+    <!-- import 할 mjs 파일만 작성! -->
+    <script type="module" src="./Module03.mjs"></script>
+</head>
+<body>
+<style>
+    .module {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        font-size: 32px;
+        font-weight: bold;
+    }
+</style>
+<div class="module">
+    <div id="result"></div>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="js"></div>
+</div>
+</body>
+</html>
