@@ -50,6 +50,10 @@ const { log } = window.console;
     log('------------ Promise 처리 흐름 개요 ---------------');
     // :: resolve 해결
     // :: reject 거부, 거절
+    /**
+     *  - new Promise 를 만나면 callback 을 바로 실행하는구나!!
+     *  --> 당연한거지 참...ㅋㅋ
+     */
     const obj = new Promise(( resolve , reject ) => {
         debugger;
         /**
