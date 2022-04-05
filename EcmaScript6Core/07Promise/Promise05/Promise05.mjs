@@ -37,6 +37,9 @@ const { log } = window.console;
          *    바로 .then()이 실행되는 것처럼 보이는 구먼...
          *  --> 실상은 then()은 Promise 처리가 끝나고
          *      나오는데...ㅋㅋ
+         *
+         *  ----> 진리 -- Promise 바디의 처리가 끝나야
+         *               [[ PromiseStatus ]] 상태값이 설정됨!
          */
         return new Promise( resolve => {
             // 이게 실행되는 시점은 setTimeout 이므로 delay 의 속도에 따름
@@ -54,6 +57,7 @@ const { log } = window.console;
     debugger;
     /**
      *  - Promise 필드 안을 읽어야지만 pending 상태가 풀리네...
+     *  --> all 로 promise 객체를 호출했으니깐 then 이 대기상태에 들어가나...?( 뇌피셜 )
      *  --> param 안에 젠부 all 안에 작성한 값들이 배열로 매핑되는구만
      */
     obj.then( param => {
