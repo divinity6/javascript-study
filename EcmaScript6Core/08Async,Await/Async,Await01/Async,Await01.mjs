@@ -118,9 +118,6 @@ const { log } = window.console;
     //    toString()을 call 하면
     //    Symbol.toStringTag()가 실행되며
     //    오브젝트를 설명하는 디폴트 문자열을 반환한다
-    /**
-     *  ----> 아, 너무 멋있다....
-     */
 
     // 4. [ object AsyncFunction ]이 출력된다
     //    즉, sports 는 AsyncFunction 오브젝트이다
@@ -170,7 +167,7 @@ const { log } = window.console;
      *  - async function 의 return 결과를
      *    then() 의 첫 번째 파라미터 값으로 사용.
      */
-    sports().then( res => {
+    sports.then( res => {
         log( res );
         debugger;
     });
@@ -192,6 +189,9 @@ const { log } = window.console;
     //    return 문의 표현식 평가 결과를
     //    resolve()의 파라미터 값으로 사용하여
     //    then()의 첫 번째 파라미터 함수를 호출한다
+    /**
+     *  ----> 아, 너무 멋있다....
+     */
 
     // 4. then( res => log( res ) );
     //    return 문의 표현식 평가 결과가
