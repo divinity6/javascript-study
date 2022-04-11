@@ -24,6 +24,9 @@ const { log } = window.console;
     log('------------ 표현식이 Promise 오브젝트 ---------------');
     function create( param ){
         return new Promise( resolve => {
+            /**
+             *  - 파라미터가 await 의 value 에 할당
+             */
             resolve( param );
         });
     };
@@ -195,6 +198,10 @@ const { log } = window.console;
         const value = await create( option ).catch( value => {
             return 300;
         });
+        /**
+         *  - catch 에 .then() 이 연결되어 있지 않으면 Promise 인스턴스를
+         *    반환하는 것이 아니라 그냥 쌩 값을 반환한다
+         */
         log( value );
         // :: 300
         debugger;
@@ -264,6 +271,7 @@ const { log } = window.console;
 {
     log('------------ 비동기 반복 ---------------');
 
+    // 제너레이터 함수가 Promise 인스턴스 반환
     async function* point(){
         yield 10;
         yield 20;
