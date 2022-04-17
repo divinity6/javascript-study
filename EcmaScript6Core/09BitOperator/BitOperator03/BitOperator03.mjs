@@ -57,7 +57,7 @@ const { log } = window.console;
     log( value << 3 );
     // :: 24
     log( value << 5 );
-    // :: 192
+    // :: 96
     debugger;
 
     // 1. value << 1
