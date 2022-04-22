@@ -8,9 +8,11 @@
  *      - 9 개 오브젝트의 총칭
  *      --> 슈퍼 클래스이며
  *      --> 9 개 오브젝트에 자동으로 상속된다
- *          ( 아 class 의 그 super 클래스... )
+ *          ( 아 class 의 그 super/sub 클래스... )
  *      --> 직접 사용할 수 없으며
  *          9 개 오브젝트에서 사용할 수 있다
+ *      ----> TypedArray 는 직접 사용하려 하면 TypeError 가 발생!
+ *
  *      --> Int8Array, Int32Array 등
  *
  *      -  스펙에 %TypedArray% 로 표기되어 있지만
