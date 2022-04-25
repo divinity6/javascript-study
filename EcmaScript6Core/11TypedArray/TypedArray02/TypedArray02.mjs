@@ -217,7 +217,7 @@ const { log } = window.console;
  *      ----> 두 번째와 3 번째는 선택이다.
  */
 {
-    log('------------ 문자열로 작성 ---------------');
+    log('------------ 두 번째에 offset 작성 ---------------');
 
     const buffer = new ArrayBuffer( 10 );
     const obj = new Int16Array( buffer , 4 );
