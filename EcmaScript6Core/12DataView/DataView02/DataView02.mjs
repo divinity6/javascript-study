@@ -127,7 +127,7 @@ const { log } = window.console;
      *
      *
      *  - ArrayBuffer 의 값을
-     *  --> TypedArray 와 DataView 에서 공유할 수 있다.
+     *  --> TypedArray 와 DataView 에서 서로 공유할 수 있다.
      */
 
 }
