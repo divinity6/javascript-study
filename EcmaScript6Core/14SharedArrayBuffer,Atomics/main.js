@@ -10,13 +10,14 @@ const url = require('url');
 
 app.use(express.static('source'));
 app.use(function (req, res) {
+  res.setHeader('Cross-origin-Embedder-Policy', 'require-corp');
+  res.setHeader('Cross-origin-Opener-Policy','same-origin');
   const parseURL = url.parse(req.url);
   if (parseURL.href == '/'){
     res.sendFile('index.html', {root: __dirname});
       return;
   };
   const fileName = parseURL.pathname.replace("/", "");
-
   /*
    * XHR의 timeout을 체크하기 위한 것으로
    * xhr.open("GET", "../file/timeout_data.txt")이면

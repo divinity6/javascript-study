@@ -39,7 +39,18 @@ const { log } = window.console;
     //     obj[ 2 ] = 30;
     //     self.postMessage( event.data );
     // };
-
+    if (crossOriginIsolated) {
+        // Works
+    }
+    log( self.crossOriginIsolated );
+    /**
+     *  - 댓다!!!!
+     *  --> 현재 출처간 격리 문제때문에 SharedArrayBuffer 를 사용할 수 없다
+     *      ( express Api 에 아래의 헤더를 설정해주면 사용가능!! )
+     *   res.setHeader('Cross-origin-Embedder-Policy', 'require-corp');
+     *   res.setHeader('Cross-origin-Opener-Policy','same-origin');
+     *  --> 이거 작성해주면되네!!!
+     */
     // main.js
     const main = new Worker( './workerGlobalScope/worker.js' );
     debugger;
