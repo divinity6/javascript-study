@@ -105,7 +105,7 @@ const { log } = window.console;
  *        };
  */
 {
-    log('------------ 오브젝트 값 복사 ---------------');
+    log('------------ Transferable 오브젝트 ---------------');
     // transfer.js
     // self.onmessage = ( event ) => {
     //     const view = new DataView( event.data );
