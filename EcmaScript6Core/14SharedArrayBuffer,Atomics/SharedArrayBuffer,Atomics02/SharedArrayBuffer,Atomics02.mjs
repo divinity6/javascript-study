@@ -74,6 +74,7 @@ const { log } = window.console;
  *      - xor()                 - 비트 XOR 연산
  *
  *      - notify()              - 대기 중인 Agent( main , Worker )에 알림을 보냄
+ *                              --> 여기서 Agent 는 main , Worker 를 뜻한다
  *
  *      - isLockFree()          - Lock 또는 Atomics 오프레이션 사용을 결정
  *
