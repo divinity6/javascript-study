@@ -119,7 +119,7 @@ const { log } = window.console;
  *
  *      --> Ajax !== XMLHttpRequest
  *      --> Ajax 는 더 상위레벨이다.
- *      ----> 그 하위 요소들이 HTML, CSS ,DOM ,JSON ,HTMLHttpRequest
+ *      ----> 그 하위 요소들이 HTML, CSS ,DOM ,JSON ,XMLHttpRequest
  *
  *      - 이러한 기술들을 JS 로 묶자라는 것!!
  */
@@ -152,7 +152,7 @@ const { log } = window.console;
  *
  */
 {
-    log('------------ SharedArrayBuffer ---------------');
+    log('------------ Ajax ---------------');
     debugger;
 }
 
