@@ -9,7 +9,7 @@
  *      --> Ajax 이전( 2005.02 ) 방법
  *      --> 브라우저에서 서버로 HTTP request 를 보내면
  *      --> 서버에서 모든 것을 처리하여
- *      --> HTML + CSS Data 를 브라우저로 전송
+ *      --> HTML + CSS + Data 를 브라우저로 전송
  *      --> 브라우저는 단지 이것을 표시하는 역할
  *
  *      - 모든 것을 서버에서 처리하므로
@@ -42,7 +42,7 @@
  *
  *      - 브라우저 처리
  *      --> 서버에서 전송한 데이터를 받아
- *      --> HTML, CSS ,DOM , JavaScript 로 콘텐츠 표현
+ *      --> HTML , CSS ,DOM , JavaScript 로 콘텐츠 표현
  *
  *      ----> Ajax engine 안에 XMLHttpRequest 에 대한 처리가
  *            들어가있다
