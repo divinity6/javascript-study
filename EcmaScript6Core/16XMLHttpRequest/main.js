@@ -10,8 +10,10 @@ const url = require('url');
 
 app.use(express.static('source'));
 app.use(function (req, res) {
+
   res.setHeader('Cross-origin-Embedder-Policy', 'require-corp');
   res.setHeader('Cross-origin-Opener-Policy','same-origin');
+
   const parseURL = url.parse(req.url);
   if ( parseURL.href == '/' ){
     res.sendFile('index.html', {root: __dirname});

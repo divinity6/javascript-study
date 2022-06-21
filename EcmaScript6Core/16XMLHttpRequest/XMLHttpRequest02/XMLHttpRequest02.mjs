@@ -90,7 +90,7 @@ const { log } = window.console;
  *
  *      - onabort           - Request 가 중지되었을 때 발생
  *      - onerror           - Request 가 실패했을 때 발생
- *      - onload            - Request 가 성공했을 때 발생
+ *      - onload            - Request 가 성공했을 때 발생( Response 는 체크하지 않음 )
  *      - onloadstart       - Request 를 시작한 시점에 발생
  *      - onloadend         - Request 의 성공, 실패에 관계없이
  *                            Request 가 종료했을 때 발생
@@ -144,7 +144,12 @@ const { log } = window.console;
      *  - onload 이벤트를 설정하면 onloadend 이벤트를 체크할 필요가 없다
      *  --> 그런데, onloadend 이벤트를 설정하면, onload 이벤트를 다시 설정해야 한다.
      *      왜냐하면 onloadend 는 성공, 실패를 구분할 수 없기 때문
+     *
+     *  - onload 이벤트는 파일이 제대로 수신되었는지 확인하거나 체크하지 않는다
+     *  --> 단지 통신이 성공했을때 발생한다
+     *  --> 따라서, 구체적으로 status 코드를 작성해 확인해야 한다
      */
+
 }
 {
     log('------------ 이벤트 타입을 사용한 형태 ---------------');
