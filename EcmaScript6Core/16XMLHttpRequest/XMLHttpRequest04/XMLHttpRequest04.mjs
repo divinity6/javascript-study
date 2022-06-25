@@ -190,7 +190,7 @@ const { log } = window.console;
         debugger;
     }
 
-    obj.open( "GET" , "../../image/rainbow.png" );
+    obj.open( "GET" , "./image/rainbow.png" );
     obj.send();
 
     debugger;
