@@ -196,5 +196,5 @@ const { log } = window.console;
     debugger;
 
     // 1. BLOB( Binary Large Object )은
-    //    이미지 , 동영상 드으이 바이너리 파일을 뜻한다
+    //    이미지 , 동영상 등이 바이너리 파일을 뜻한다
 }
