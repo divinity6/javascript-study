@@ -86,5 +86,7 @@ const { log } = window.console;
     debugger;
     /**
      *  - 처리를 중단하지 않고 다음처리를 이어서 처리한다
+     *
+     *  --> axios 도 그냥 호출하지말고, 한번 async await 로 묶으면 편하겠네
      */
 }
