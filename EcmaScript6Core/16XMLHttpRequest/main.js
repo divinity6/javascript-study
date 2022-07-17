@@ -8,9 +8,8 @@ const express = require('express');
 const app = express();
 const url = require('url');
 
-debugger;
-
 app.use(express.static('source'));
+
 app.use(function (req, res) {
   debugger;
   res.setHeader('Cross-origin-Embedder-Policy', 'require-corp');
@@ -36,8 +35,6 @@ app.use(function (req, res) {
     res.sendFile(fileName, {root: __dirname});
   };
 });
-
-debugger;
 
 // 브라우저 주소창에 localhost:3000/Module01/index.html 형태로 입력합니다.
 app.listen(3000);

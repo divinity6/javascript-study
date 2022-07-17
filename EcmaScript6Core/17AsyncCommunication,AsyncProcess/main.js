@@ -8,8 +8,6 @@ const express = require('express');
 const app = express();
 const url = require('url');
 
-debugger;
-
 app.use(express.static('source'));
 app.use(function (req, res) {
   debugger;
@@ -19,7 +17,7 @@ app.use(function (req, res) {
   const parseURL = url.parse(req.url);
   if ( parseURL.href == '/' ){
     res.sendFile('index.html', {root: __dirname});
-      return;
+    return;
   };
   const fileName = parseURL.pathname.replace("/", "");
   /*
@@ -37,7 +35,6 @@ app.use(function (req, res) {
   };
 });
 
-debugger;
 
 // 브라우저 주소창에 localhost:3000/Module01/index.html 형태로 입력합니다.
 app.listen(3000);
