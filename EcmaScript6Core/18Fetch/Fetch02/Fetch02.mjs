@@ -220,6 +220,11 @@ const { log } = window.console;
     // 3. const blob = await response.blob()
     //    blob()이 Promise 에서 실행되므로 await 를 사용한다
 
+    /**
+     *  - response 는 await fetch 로 반환되는 그 자체가 오브젝트라는 것이다
+     *  --> 따라서, response.status 형태로 사용할 수 있는 것이다
+     */
+
 }
 
 /**
@@ -229,7 +234,7 @@ const { log } = window.console;
  *
  *     - error                - 통신 에러 오브젝트
  *     - headers              - Response Headers 오브젝트
- *     - ok                   - Response 성공. 200 에서 299 일시 true
+ *     - ok                   - Response 성공. 200 에서 299 사이 일시 true
  *     - redirect             - Response 의 리다이렉트 여부
  *     - redirected           - 리다이렉트 URL 의 다수 여부
  *     - status               - HTTP status 코드. 200 ,404
