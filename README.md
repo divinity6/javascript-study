@@ -5,13 +5,17 @@
 - - -
 
 - 강의 순서
-  - ### JavascriptBigginer <https://github.com/divinity6/javascriptStudy/tree/master/javascriptBigginer>
+  - ### JavascriptBigginer 
+    - <https://github.com/divinity6/javascriptStudy/tree/master/javascriptBigginer>
     - ES5 이전까지의 Js 기본 문법 및 사용 형태
-  - ### JavascriptCore <https://github.com/divinity6/javascriptStudy/tree/master/EcmaScript6Core>
+  - ### JavascriptCore 
+    - <https://github.com/divinity6/javascriptStudy/tree/master/EcmaScript6Core>
     - ES5 JS 동작원리 및 실행콘텍스트 형태
-  - ### EcmaScript6Bigginer <https://github.com/divinity6/javascriptStudy/tree/master/EcmaScript6Bigginer>
+  - ### EcmaScript6Bigginer 
+    - <https://github.com/divinity6/javascriptStudy/tree/master/EcmaScript6Bigginer>
     - ES6 ~ ES10(2019) 기본 문법 및 사용형태
-  - ### EcmaScript6Core <https://github.com/divinity6/javascriptStudy/tree/master/EcmaScript6Core>
+  - ### EcmaScript6Core 
+    - <https://github.com/divinity6/javascriptStudy/tree/master/EcmaScript6Core>
     - ES6+ 비동기 처리 형태 SPEC 의도 해석
     
 - - -
