@@ -1,7 +1,6 @@
 # javascriptStudy
 #### inflean 김영보 선생님의 강의를 듣고 개인적으로 정리한 문서입니다
 > 본 문서는 배포목적이 없으며 개인적인 공부 및 저장용으로 올려둔 것입니다!
-* 강좌 링크 <https://www.inflearn.com/users/@tonextday >
 - - -
 
 - 강의 순서
@@ -19,4 +18,5 @@
     - ES6+ 비동기 처리 형태 SPEC 의도 해석
     
 - - -
-> 공부용으로 올려둔것이기 때문에 파일명 및 경로명이 모두한글입니다.
+
+- 출처 : https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-es6-%EC%8B%AC%ED%99%94
